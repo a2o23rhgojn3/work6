@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- reset -->
+    <link rel="stylesheet" href="style/vendors/reset.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- style -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body class="login">
+    <header>
+        <div class="image-wrapper">
+            <img src="images/no.11.png" alt="">
+        </div>
+        <div class="image-wrapper">
+            <img src="images/no.12.png" alt="">
+        </div>
+    </header>
+    <main>
+        <h1>ログイン</h1>
+        <p class="announce">
+            <span>ご登録のメールアドレスと</span><span>パスワードをご入力ください。</span>
+        </p>
+        <form method="get">
+            <label>
+                <span>メールアドレス</span>
+                <input type="email">
+            </label>
+            <label>
+                <span>パスワード</span>
+                <input type="password">
+            </label>
+            <label data-type="checkbox">
+                <input type="checkbox" value="パスワードを表示する">
+                <span>パスワードを表示する</span>
+            </label>
+            <button type="button">ログイン</button>
+        </form>
+    </main>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

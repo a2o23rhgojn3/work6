@@ -1,0 +1,39 @@
+.login {
+    main {
+        width: 50%;
+        margin: 50px auto;
+
+        form {
+            label {
+
+                input {
+                    display: block;
+                    max-width: 500px;
+                    width: 100%;
+                    margin-top: 15px;
+                    padding: 10px 15px;
+                    background-color: $lightGrey;
+                    border-bottom: 2px solid $grey;
+                    box-sizing: border-box;
+                }
+            }
+        }
+    }
+}
+.gender {
+    main {
+        .recommend {
+            grid-template-columns: 30% 30%;
+            grid-template-rows: 50vh auto;
+            justify-content: center;
+        }
+        .content {
+            .items {
+                gap: 30px;
+                .item {
+                    width: calc((100% - (30px * 3)) / 4);
+                }
+            }
+        }
+    }
+}
