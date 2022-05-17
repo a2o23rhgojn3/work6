@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>確認画面</title>
+    <title>購入完了</title>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/043359d8e6.js" crossorigin="anonymous"></script>
     <!-- reset -->
@@ -17,36 +17,23 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 
-<body class="confirm">
+<body class="complete">
     <header>
         <div class="image-wrapper">
             <a href="items.html"><img src="images/no.41.png" alt=""></a>
         </div>
     </header>
     <main>
-        <h1>購入確認画面</h1>
-        <div class="cart">
-            <!-- render -->
+        <h1>購入完了</h1>
+        <div class="announce">
+            <p>ご購入ありがとうございます。<br>
+                またのご利用お待ちしております。
+            </p>
+            <p>管理ID : XXXXX-XXXXXX</p>
         </div>
-        <div class="payment">
-            <div class="payment__confirm">
-                <h2>注文内容</h2>
-                <div class="sum">
-                    <p>商品合計</p>
-                    <p class="price">-</p>
-                </div>
-                <div class="tax">
-                    <p>消費税</p>
-                    <p class="price">-</p>
-                </div>
-            </div>
-        </div>
-        <div class="buy">
-            <div class="btn">
-                <p>購入する</p>
-            </div>
+        <div class="top btn">
+            <a href="items.html">トップページへ</a>
         </div>
     </main>
-    <footer></footer>
-    <script src="js/confirm.js"></script>
+    <script src="js/complete.js"></script>
 </body>

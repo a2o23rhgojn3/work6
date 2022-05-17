@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>ログイン</title>
     <!-- reset -->
     <link rel="stylesheet" href="style/vendors/reset.css">
     <!-- jquery -->
@@ -18,25 +18,27 @@
 <body class="login">
     <header>
         <div class="image-wrapper">
-            <img src="images/no.11.png" alt="">
-        </div>
-        <div class="image-wrapper">
-            <img src="images/no.12.png" alt="">
+            <img src="images/no.41.png" alt="">
         </div>
     </header>
     <main>
         <h1>ログイン</h1>
         <p class="announce">
             <span>ご登録のメールアドレスと</span><span>パスワードをご入力ください。</span>
+        <p class="alert"></p>
+        <div class="info">
+            <p>初期メールアドレス : user@gmail.com</p>
+            <p>初期パスワード : password</p>
+        </div>
         </p>
         <form method="get">
             <label>
                 <span>メールアドレス</span>
-                <input type="email">
+                <input id="email" type="email">
             </label>
             <label>
                 <span>パスワード</span>
-                <input type="password">
+                <input id="password" type="password">
             </label>
             <label data-type="checkbox">
                 <input type="checkbox" value="パスワードを表示する">

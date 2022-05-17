@@ -11,6 +11,15 @@ $(function() {
     })
     // button event
     $("button").click(function() {
+        let email = $("#email").val();
+        let password = $("#password").val();
+        if(email != "user@gmail.com" || password != "password") {
+            $(".alert").text("メールアドレスまたはパスワードが違います。");
+            $("#email").val("");
+            $("#password").val("");
+            return;
+        }
         location.href = `${location.protocol}//${location.host}/${location.pathname}/items.html`;
+        // location.href = `${location.protocol}//${location.host}/items.html`;
     })
 });

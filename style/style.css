@@ -7,6 +7,7 @@
 .btn a, .btn p {
   display: block;
   padding: 15px 10px;
+  cursor: pointer;
 }
 
 html {
@@ -20,12 +21,21 @@ html {
 }
 
 .login main .announce {
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .login main .announce span {
   display: inline-block;
   white-space: nowrap;
+}
+
+.login main .alert {
+  color: red;
+  margin-top: 30px;
+}
+
+.login main .info {
+  margin-top: 30px;
 }
 
 .login main form {
@@ -94,8 +104,8 @@ html {
   display: grid;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
-  -ms-grid-rows: 60vh auto;
-      grid-template-rows: 60vh auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
 }
 
 .gender .recommend .image-wrapper img {
@@ -165,6 +175,7 @@ html {
 }
 
 .gender .content .items .item .info .name {
+  height: 80px;
   margin-bottom: 15px;
 }
 
@@ -179,14 +190,14 @@ html {
       align-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 80px;
+  height: 100px;
 }
 
 .gender .content .items .item .info .details li {
   display: inline-block;
-  height: 25px;
+  height: 30px;
   margin: 0 0 5px 3px;
-  padding: 3px 10px;
+  padding: 5px 10px;
   text-align: center;
   border: 1px solid #1b1b1b;
 }
@@ -317,14 +328,20 @@ html {
   text-align: center;
 }
 
-.confirm main .content {
+.confirm main .cart .empty {
+  margin: 50px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.confirm main .cart .content {
   max-width: 900px;
   margin: 30px auto;
   padding: 15px;
   border-bottom: 1px solid #f1f1f1;
 }
 
-.confirm main .content .item {
+.confirm main .cart .content .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -335,32 +352,32 @@ html {
           justify-content: center;
 }
 
-.confirm main .content .item .image-wrapper {
+.confirm main .cart .content .item .image-wrapper {
   width: 30%;
   height: auto;
 }
 
-.confirm main .content .item .image-wrapper img {
+.confirm main .cart .content .item .image-wrapper img {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.confirm main .content .item .info {
+.confirm main .cart .content .item .info {
   width: 70%;
   padding: 0 5vw;
 }
 
-.confirm main .content .item .info p {
+.confirm main .cart .content .item .info p {
   margin-bottom: 15px;
 }
 
-.confirm main .content .item .info .price {
+.confirm main .cart .content .item .info .price {
   font-weight: 800;
 }
 
-.confirm main .content .sum {
+.confirm main .cart .content .sum {
   margin-top: 30px;
   padding-right: 5vw;
   font-size: 1.2rem;
@@ -368,7 +385,7 @@ html {
   text-align: right;
 }
 
-.confirm main .content .clear {
+.confirm main .cart .content .clear {
   max-width: 500px;
   margin: 30px auto;
   border: 1px solid black;
@@ -376,14 +393,14 @@ html {
   transition: all 0.5s 0s ease;
 }
 
-.confirm main .content .clear:hover {
+.confirm main .cart .content .clear:hover {
   background-color: #cecece;
 }
 
 .confirm main .payment {
   width: 90%;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 50px auto;
   padding: 15px 10px;
   border-radius: 5px;
   -webkit-box-shadow: 5px 5px 15px 10px rgba(203, 203, 203, 0.5);
@@ -419,6 +436,32 @@ html {
   background-color: red;
   font-size: 1.3rem;
   font-weight: 800;
+}
+
+.complete main h1 {
+  margin-top: 50px;
+  font-size: 1.3rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.complete main .announce {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.complete main .announce p {
+  margin-top: 30px;
+  line-height: 2;
+}
+
+.complete main .top {
+  width: 80%;
+  max-width: 500px;
+  margin: 30px auto;
+  font-size: 1.3rem;
+  font-weight: 800;
+  border: 1px solid black;
 }
 
 .common header .mobile .menu {
@@ -474,11 +517,15 @@ html {
       justify-content: space-around;
 }
 
+.common header .mobile nav ul li:nth-of-type(2) {
+  padding-left: 30px;
+}
+
 .common header .desktop {
   display: none;
 }
 
-.login header, .confirm header {
+.login header, .confirm header, .complete header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -490,13 +537,13 @@ html {
   border-bottom: 1px solid black;
 }
 
-.login header .image-wrapper, .confirm header .image-wrapper {
+.login header .image-wrapper, .confirm header .image-wrapper, .complete header .image-wrapper {
   width: 50px;
   height: 50px;
   margin-left: 20px;
 }
 
-.login header .image-wrapper img, .confirm header .image-wrapper img {
+.login header .image-wrapper img, .confirm header .image-wrapper img, .complete header .image-wrapper img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -504,6 +551,9 @@ html {
 }
 
 @media (min-width: 960px) {
+  html {
+    font-size: 20px;
+  }
   .login main {
     width: 50%;
     margin: 50px auto;
@@ -520,10 +570,10 @@ html {
             box-sizing: border-box;
   }
   .gender main .recommend {
-    -ms-grid-columns: 30% 30%;
-        grid-template-columns: 30% 30%;
-    -ms-grid-rows: 50vh auto;
-        grid-template-rows: 50vh auto;
+    -ms-grid-columns: 40% 40%;
+        grid-template-columns: 40% 40%;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

@@ -37,10 +37,12 @@
                 padding-bottom: 20px;
                 background-color: $white;
                 
-
                 ul {
                     display: flex;
                     justify-content: space-around;
+                    li:nth-of-type(2){
+                        padding-left: 30px;
+                    }
                 }
             }
         }
@@ -51,7 +53,7 @@
     }
 }
 
-.login, .confirm {
+.login, .confirm, .complete {
     header {
         display: flex;
         justify-content: flex-start;

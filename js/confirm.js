@@ -32,11 +32,23 @@ $(function () {
             </div>
         `);
     }
+    if(sum == 0) {
+        $(".cart").append(`
+            <p class="empty">カートは空です</p>
+        `);
+        $(".payment").hide();
+        $(".buy").hide();
+    }
     $(".payment .payment__confirm .sum .price").text(`￥${sum.toLocaleString()}`);
     $(".payment .payment__confirm .tax .price").text(`￥${(sum * tax).toLocaleString()}`);
     // clear item
     $(".clear").click(function () {
         sessionStorage.removeItem($(this).closest(".content").attr("id"));
         location.reload();
+    });
+    // buy button
+    $(".buy .btn").click(function() {
+        sessionStorage.clear();
+        location.href = `${location.protocol}//${location.host}/${location.pathname}/complete.html`;
     });
 })
