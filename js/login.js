@@ -10,6 +10,7 @@ $(function() {
         }
     })
     console.log(`${location.protocol}//${location.host}/items.html`);
+    console.log(location.pathname);
     // button event
     $("button").click(function() {
         location.href = `${location.protocol}//${location.host}/items.html`;
