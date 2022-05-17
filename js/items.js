@@ -5,7 +5,7 @@ $(function () {
         let id = $(this).closest(".item").attr("id");
         let gender = $(this).parent().find(".type-of-gender").text();
         let name = $(this).parent().find(".name").text();
-        let price = $(this).parent().find(".price").text().replace("￥", "");
+        let price = $(this).parent().find(".price").text().replace("￥", "").replace(",", "");
         let img = $(this).closest(".item").find(".image-wrapper img").attr("src");
         // show modal window
         $(".modal-window").show();

@@ -19,7 +19,7 @@ $(function () {
                     <div class="info">
                         <p class="name">${obj.name}</p>
                         <p class="size">フリーサイズ</p>
-                        <p class="price">￥${obj.price}</p>
+                        <p class="price">￥${Number(obj.price).toLocaleString()}</p>
                         <p class="count">数量 : ${obj.count}</p>
                     </div>
                 </div>
