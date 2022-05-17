@@ -1,4 +1,4 @@
-$(function () {
+$(window).on("load", function(){ 
     // add button event
     $(".add").click(function (event) {
         event.preventDefault();

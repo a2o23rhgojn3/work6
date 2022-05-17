@@ -1,4 +1,4 @@
-$(function () {
+$(window).on("load", function(){ 
     // rendering
     let sum = 0;    // 商品合計
     let tax = 1.1;   // 消費税
@@ -49,6 +49,7 @@ $(function () {
     // buy button
     $(".buy .btn").click(function() {
         sessionStorage.clear();
-        location.href = `${location.protocol}//${location.host}/${location.pathname}/complete.html`;
+        location.href = `${location.protocol}//${location.host}/work6/complete.html`;
+        // location.href = `${location.protocol}//${location.host}/complete.html`;
     });
 })
