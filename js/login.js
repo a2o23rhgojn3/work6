@@ -9,10 +9,8 @@ $(function() {
             $("input[type='text']").attr("type", "password");
         }
     })
-    console.log(`${location.protocol}//${location.host}/items.html`);
-    console.log(location.pathname);
     // button event
     $("button").click(function() {
-        location.href = `${location.protocol}//${location.host}/items.html`;
+        location.href = `${location.protocol}//${location.host}/${location.pathname}/items.html`;
     })
 });
