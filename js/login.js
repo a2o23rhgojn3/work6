@@ -11,6 +11,6 @@ $(function() {
     })
     // button event
     $("button").click(function() {
-        location.href = '../items.html';
+        location.href = 'items.html';
     })
 });
