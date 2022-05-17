@@ -11,7 +11,7 @@ $(window).on("load", function(){
         $(".modal-window").show();
         $(".modal-content__main .image-wrapper img").attr("src", img);
         $(".modal-content__main .name").text(name);
-        $(".modal-content__main .price").text(`￥${price}`);
+        $(".modal-content__main .price").text(`￥${Number(price).toLocaleString()}`);
         // sessionStorage
         let itemInfo = {
             gender: gender,
